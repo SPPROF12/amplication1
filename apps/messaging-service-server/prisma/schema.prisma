@@ -7,24 +7,6 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Message {
-  createdAt DateTime @default(now())
-  id        String   @id @default(cuid())
-  updatedAt DateTime @updatedAt
-}
-
-model ChatRoom {
-  createdAt DateTime @default(now())
-  id        String   @id @default(cuid())
-  updatedAt DateTime @updatedAt
-}
-
-model ChatRoomMembership {
-  createdAt DateTime @default(now())
-  id        String   @id @default(cuid())
-  updatedAt DateTime @updatedAt
-}
-
 model User {
   createdAt DateTime @default(now())
   email     String?  @unique

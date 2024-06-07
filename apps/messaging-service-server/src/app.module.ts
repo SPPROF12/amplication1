@@ -1,7 +1,4 @@
 import { Module } from "@nestjs/common";
-import { MessageModule } from "./message/message.module";
-import { ChatRoomModule } from "./chatRoom/chatRoom.module";
-import { ChatRoomMembershipModule } from "./chatRoomMembership/chatRoomMembership.module";
 import { UserModule } from "./user/user.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
@@ -15,9 +12,6 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
 @Module({
   controllers: [],
   imports: [
-    MessageModule,
-    ChatRoomModule,
-    ChatRoomMembershipModule,
     UserModule,
     HealthModule,
     PrismaModule,
